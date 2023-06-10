@@ -1,0 +1,18 @@
+{
+  "test": " Uzbek tiliga hush kelibsiz",
+  "lenguage": "Uzb",
+  "navbar":{
+    "button":"оставить заявку",
+    "link_brand":"о бренде",
+    "link_products":"продукци",
+    "link_advantages":"преимущества",
+    "link_open_club":"открыть клуб",
+    "link_contacts": "контакты",
+    "uzbek":"Узб",
+    "russia":"Россия"
+  },
+  "home":{
+    "bg_video":"TRUE FITNESS - ПРЕМИУМ ТРЕНАЖЕРЫ ИЗ США",
+    "blue_fon":"TRUE - ведущий мировой производитель премиального фитнес оборудования"
+  }
+}
