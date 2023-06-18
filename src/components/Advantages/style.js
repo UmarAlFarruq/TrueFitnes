@@ -27,6 +27,7 @@ export const Card = styled.div`
   align-items: flex-start;
   width: 295px;
   height: 450px;
+  justify-content: space-between;
 `;
 export const Img = styled.img`
   width: 295px;

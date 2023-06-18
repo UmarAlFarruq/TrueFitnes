@@ -32,6 +32,7 @@ export const H1 = styled.div`
   line-height: 72px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 `;
 
 export const Span = styled.div`

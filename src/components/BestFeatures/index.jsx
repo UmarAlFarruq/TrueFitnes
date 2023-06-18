@@ -1,44 +1,34 @@
 import { Container, Div, ImgDiv, P, Span, Title, Wrapper } from "./style";
+import { useTranslation } from "react-i18next";
+import img from "../../assets/imgs/BestFeatures1.png";
+import img2 from "../../assets/imgs/BestFeatures2.png";
 
 function BestFeatures() {
+  const {t} = useTranslation()
   return (
     <Wrapper>
       <Container>
-        <ImgDiv>
-          <Title>Лучшие характеристики</Title>
+        <ImgDiv img={img} >
+          <Title>{t("home.best_features.img_title_1")}</Title>
           <Span></Span>
-          <P>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </P>
-        </ImgDiv>
+          <P>{t("home.best_features.img_text_1")}</P>
+        </ImgDiv   >
         <Div>
-          <Title>Мы предлагаемполный комплекс услуг</Title>
+          <Title>{t("home.best_features.bg_title_1")}</Title>
           <Span></Span>
-          <P>
-            Высокое качество тренажеров - это визитная карточка TRUE. Кроме того
-            TRUE предоставляет до 5 лет гарантии на кардиотренажеры.
-          </P>
+          <P>{t("home.best_features.bg_text_1")} </P>
         </Div>
       </Container>
       <Container>
         <Div>
-          <Title>Мы предлагаемполный комплекс услуг</Title>
+          <Title>{t("home.best_features.bg_title_2")}</Title>
           <Span></Span>
-          <P>
-            Высокое качество тренажеров - это визитная карточка TRUE. Кроме того
-            TRUE предоставляет до 5 лет гарантии на кардиотренажеры.
-          </P>
+          <P>{t("home.best_features.bg_text_2")} </P>
         </Div>
-        <ImgDiv>
-          <Title>Лучшие характеристики</Title>
+        <ImgDiv  img={img2}>
+          <Title>{t("home.best_features.img_title_2")}</Title>
           <Span></Span>
-          <P>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </P>
+          <P>{t("home.best_features.img_text_2")} </P>
         </ImgDiv>
       </Container>
     </Wrapper>

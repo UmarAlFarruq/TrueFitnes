@@ -1,23 +1,20 @@
+import { useTranslation } from "react-i18next";
 import { Button, Card, Input, P, Title, Wrapper } from "./style";
 
 function HomeForm() {
+
+  const {t} = useTranslation()
+
   return (
     <Wrapper>
       <Card>
-        <Title>
-          Получите эксклюзивное предложение на тренажеры TRUE FITNESS
-        </Title>
-        <P>
-          Мы будем рады проконсультировать Вас и помочь с подбором <br /> оборудования
-        </P>
-        <Input placeholder="имя" />
-        <Input placeholder="EMail" />
+        <Title> {t("home.home_form.title")} </Title>
+        <P> {t("home.home_form.text_1")} </P>
+        <Input placeholder={t("input_placeholder.input_name")} />
+        <Input placeholder={t("input_placeholder.input_email")} />
         <Input placeholder="+7(999)999-99-99" />
-        <Button>ОТПРАВИТЬ</Button>
-        <P>
-          Нажимая на кнопку, вы даете согласие на обработку персональных данных
-          и соглашаетесь c политикой конфиденциальности{" "}
-        </P>
+        <Button> {t("home.home_form.button")}</Button>
+        <P> {t("home.home_form.text")} </P>
       </Card>
     </Wrapper>
   );

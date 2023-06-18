@@ -40,4 +40,5 @@ export const WrapperIMG = styled.div`
 export const IMG = styled.img`
   width: ${({ width }) => width || "216px"};
   object-fit: fill;
+  /* object-fit: cover; */
 `;

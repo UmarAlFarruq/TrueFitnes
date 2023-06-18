@@ -1,3 +1,4 @@
+/* eslint-disable no-const-assign */
 import React from "react";
 import HomePage from "../pages/Home";
 import OpenClub from "../pages/OpenClub";
@@ -5,11 +6,16 @@ import AdvantagesPage from "../pages/Advantages";
 import ContactPage from "../pages/Contact";
 import Brand from "../pages/Brend";
 
+
+
+
+
+
 export const navbar = [
   {
     id: 1,
     path: "/home",
-    name: "Home",
+    name:  "Home",
     hidden: true,
     Element: <HomePage />,
     search: "?",
@@ -17,7 +23,8 @@ export const navbar = [
   {
     id: 2,
     path: "/brend",
-    name: "O бренде",
+    // eslint-disable-next-line no-unused-vars
+    name:  "O бренде" ,
     hidden: false,
     Element: <Brand />,
     search: "?",

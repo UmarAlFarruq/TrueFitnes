@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   height: 805px;
   background-image: url(${img});
   padding: 126px 100px;
+  margin: auto;
 `;
 
 export const Card = styled.div`
@@ -17,6 +18,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  margin: auto;
 `;
 
 export const Title = styled.div`

@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import img from '../../assets/imgs/brandCarouselITPark.png'
 
 export const Wrapper = styled.div`
-  margin: 15px 0;
+  margin: 76px 0;
 `;
 
 export const Img = styled.img``;
@@ -10,10 +11,22 @@ export const UserName = styled.h2`
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size:${({size})=>size || '25px'};
   line-height: 30px;
   text-transform: uppercase;
   color: #01aee7;
+  text-align: center;
+`;
+export const Title = styled.h2`
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.85);
+  margin-bottom: 64px;
 `;
 
 export const WrapperCarousel = styled.div`
@@ -31,18 +44,28 @@ export const WrapperCarousel = styled.div`
 `;
 
 export const P = styled.p`
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: capitalize;
+font-family: 'Montserrat';
+font-style: italic;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+text-align: center;
+text-transform: capitalize;
   color: ${({ color }) => color || "#01aee7"};
 `;
 export const IMG = styled.img`
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+`;
 
+export const Span = styled.span`
+  background: #ffff19;
+  width: 200px;
+  height: 3px;
+`;
+export const Video = styled.div`
+  width: 480px;
+  height: 280.06px;
+  background-image: url(${img});
 `;

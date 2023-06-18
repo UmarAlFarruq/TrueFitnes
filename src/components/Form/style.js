@@ -25,6 +25,7 @@ export const H6 = styled.div`
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 767px;
 `;
 
 export const Formm = styled.div`

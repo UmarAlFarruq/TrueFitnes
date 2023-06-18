@@ -1,20 +1,18 @@
+import { useTranslation } from "react-i18next";
 import { Button, Container, H1, IMG, Span, Text, Wrapper } from "./style";
 
 function AboutTrue({ img, button }) {
+
+  const {t} = useTranslation()
+
   return (
     <Wrapper>
       <IMG src={img} />
       <Container>
-        <H1>О компании TRUE</H1>
+        <H1>{t("home.aboutTrue.title")}</H1>
         <Span></Span>
-        <Text>
-          С момента основания компании в 1972 г. и на протяжении всего времени
-          существования, TRUE придерживается главных принципов: высокого
-          качество продукции и обеспечение первоклассного сервиса, это позволяет
-          бренду удерживать лидирующие позиции и выстраивать с покупателями
-          долгосрочные и доверительные отношения.
-        </Text>
-        {button ? <Button>подробнее</Button> : null}
+        <Text>{t("home.aboutTrue.text")} </Text>
+        {button ? <Button>{t("home.aboutTrue.button")}</Button> : null}
       </Container>
     </Wrapper>
   );

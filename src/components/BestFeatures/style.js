@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import img from "../../assets/imgs/best.png";
 
 export const Wrapper = styled.div`
   width: 1440px;
@@ -24,7 +23,7 @@ export const ImgDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-image: url(${img});
+  background-image: url(${({img})=>img});
 `;
 export const Div = styled.div`
   width: 684px;
@@ -50,12 +49,12 @@ export const Span = styled.div`
   background: #fff500;
 `;
 export const P = styled.p`
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: capitalize;
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-transform: capitalize;
 
-  color: #ffffff;
+color: #FFFFFF;
 `;

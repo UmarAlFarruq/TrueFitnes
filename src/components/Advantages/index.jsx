@@ -7,105 +7,73 @@ import {
   Text,
   Wrapper,
   Titlee,
-  ImgDiv,
-  H6,
-  Form,
-  Input,
-  ButtonForm
 } from "./style";
-import img from "../../assets/imgs/Advantages.png";
+import img from "../../assets/imgs/advantages-card-img.png";
+import img2 from "../../assets/imgs/advantages-card-img2.png";
+import img8 from "../../assets/imgs/advantages-card-img8.png";
+import img3 from "../../assets/imgs/advantages-card-img3.png";
+import img4 from "../../assets/imgs/advantages-card-img4.png";
+import img5 from "../../assets/imgs/advantages-card-img5.png";
+import img6 from "../../assets/imgs/advantages-card-img6.png";
+import img7 from "../../assets/imgs/advantages-card-img7.png";
+import Form from "../Form";
+import { useTranslation } from "react-i18next";
 
 function Advantages() {
+  const {t} = useTranslation()
   return (
     <Wrapper>
       <TitleContainer height="315px">
-        <ClubText>НАШИ ПРЕИМУЩЕСТВА</ClubText>
-        <Title>Преимущества TRUE FITNESS</Title>
-        <P>
-          Благодаря которым мы являемся мировым лидером в производстве
-          фитнес-оборудования
-        </P>
+        <ClubText>{t("advantages.blue_fon.yellow_title")}</ClubText>
+        <Title>{t("advantages.blue_fon.title")}</Title>
+        <P>{t("advantages.blue_fon.text")} </P>
       </TitleContainer>
       <Cards>
         <Card>
           <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <H1>{t("advantages.cards.title")} </H1>
+          <Text>{t("advantages.cards.text")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img2} />
+          <H1>{t("advantages.cards.title2")} </H1>
+          <Text>{t("advantages.cards.text2")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img3} />
+          <H1>{t("advantages.cards.title3")} </H1>
+          <Text>{t("advantages.cards.text3")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img4} />
+          <H1>{t("advantages.cards.title4")} </H1>
+          <Text>{t("advantages.cards.text4")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img5} />
+          <H1>{t("advantages.cards.title5")} </H1>
+          <Text>{t("advantages.cards.text5")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img6} />
+          <H1>{t("advantages.cards.title6")} </H1>
+          <Text>{t("advantages.cards.text6")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img7} />
+          <H1>{t("advantages.cards.title7")} </H1>
+          <Text>{t("advantages.cards.text7")}</Text>
         </Card>
         <Card>
-          <Img src={img} />
-          <H1>Лучшие характеристики в классе</H1>
-          <Text>
-            Наши тренажеры имеют самые совершенные характеристики в классе, от
-            более мощных технических показателей до расширенных функциональных
-            возможностей
-          </Text>
+          <Img src={img8} />
+          <H1>{t("advantages.cards.title8")} </H1>
+          <Text>{t("advantages.cards.text8")}</Text>
         </Card>
       </Cards>
       <Button>TOP 5</Button>
-      <Titlee>
-        Бренд TRUE Fitness входит в TOП 5 крупнейших производителей фитнес
-        оборудования
-      </Titlee>
-      <ImgDiv>
+      <Titlee>{t("advantages.title")} </Titlee>
+        <Form />
+      {/* <ImgDiv>
         <H6>TRUE FITNESS</H6>
         <Title>
           Получите эксклюзивное предложение на тренажеры TRUE FITNESS
@@ -124,7 +92,7 @@ function Advantages() {
           и <br />
           соглашаетесь c политикой конфиденциальности»
         </H6>
-      </ImgDiv>
+      </ImgDiv> */}
     </Wrapper>
   );
 }

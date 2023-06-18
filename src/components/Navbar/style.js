@@ -27,6 +27,7 @@ export const Contact = styled.div`
 `;
 export const Button = styled.button`
   color: white;
+  white-space: nowrap;
   display: flex;
   flex-direction: row;
   justify-content: center;

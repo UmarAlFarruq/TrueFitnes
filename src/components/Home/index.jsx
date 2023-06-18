@@ -10,18 +10,19 @@ import {
 import video from "../../assets/videos/Salom Tashkent.mp4";
 import WeOffer from "../WeOffer";
 import Catalog from "../Catalog";
-import News from "../News";
+// import News from "../News";
 import Club from "../3dClub";
 import AboutTrue from "../AboutTrue";
 import HomeForm from "../HomeForm";
 import BestFeatures from "../BestFeatures";
 import img from "../../assets/imgs/aboutTrue.png";
 import OtherProject from "../OtherProject";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+// import MyCarousel from "../ContacCarousel";
 
 
 function Home() {
-  // const {t} = useTranslation();
+  const {t} = useTranslation();
   return (
     <Wrapper>
       <VideoContainer backgroundClip={video}>
@@ -35,23 +36,19 @@ function Home() {
         ></Video>
         <BgFon></BgFon>
         <H1 className="title">
-          TRUE FITNESS - ПРЕМИУМ <br />
-          ТРЕНАЖЕРЫ ИЗ США
+         {t("home.bg_video")}
         </H1>
       </VideoContainer>
       <ContainerText>
         <p className="title" style={{ color: "white" }}>
-          TRUE - ведущий мировой производитель
-        </p>
-        <p className="title" style={{ color: "white" }}>
-          премиального фитнес оборудования
+          {t("home.blue_fon")}
         </p>
       </ContainerText>
       <Carousel />
       <BestFeatures />
       <WeOffer />
       <Catalog />
-      <News />
+      {/* <News /> */}
       <Club />
       <AboutTrue img={img} button={true} />
       <HomeForm />

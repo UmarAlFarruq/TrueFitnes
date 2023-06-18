@@ -16,6 +16,7 @@ export const TitleContainer = styled.div`
   text-align: center;
   gap: 20px;
   background: #01aee7;
+  align-items: center;
 `;
 
 export const Img = styled.img`
@@ -34,10 +35,12 @@ export const Title = styled.div`
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: ${({ size }) => size || "40px"};
   line-height: 48px;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: ${({ width }) => width || "629px"};
+  text-align: center;
 `;
 
 export const ClubText = styled.div`
@@ -48,6 +51,7 @@ export const ClubText = styled.div`
   line-height: 22px;
   text-transform: uppercase;
   color: #fff500;
+  text-align: center;
 `;
 
 export const P = styled.p`
@@ -116,9 +120,6 @@ export const Label = styled.label`
 `;
 
 export const Button = styled.button`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 9px 30px;
   gap: 10px;
   width: 161px;
@@ -131,6 +132,7 @@ export const Button = styled.button`
   line-height: 22px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
   border: none;
   :active {
     opacity: 0.8;

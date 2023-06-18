@@ -38,12 +38,13 @@ export const Input = styled.input`
 `;
 
 export const H1 = styled.div`
-  font-family: "Jost";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 46px;
-  line-height: 66px;
+  line-height: 56px;
   text-transform: uppercase;
+
   color: #01aee7;
 `;
 export const Button = styled.button`
@@ -70,4 +71,14 @@ export const Button = styled.button`
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #ffffff;
+`;
+
+export const P = styled.div`
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: #000000;
 `;

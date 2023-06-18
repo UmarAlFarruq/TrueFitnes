@@ -30,67 +30,34 @@ import imgCard5 from "../../assets/imgs/innovationsCard5.png";
 import imgCard6 from "../../assets/imgs/innovationsCard6.png";
 import Form from "../Form";
 import BrendCarousel from "../BrendCarousel";
+import { useTranslation } from "react-i18next";
 
 function Brand() {
+
+  const {t} = useTranslation()
+
   return (
     <Wrapper>
       <TitleContainer height="225px">
-        <ClubText>О НАШЕМ БРЕНДЕ</ClubText>
-        <Title>TRUE - СОВЕРШЕННОE</Title>
-        <Title> ФИТНЕС-ОБОРУДОВАНИЕ</Title>
+        <ClubText>{t("brend.blue_fon.text")}</ClubText>
+        <Title>{t("brend.blue_fon.title1")}</Title>
+        <Title> {t("brend.blue_fon.title2")}</Title>
       </TitleContainer>
       <About>
         <Card>
-          <Text>
-            Это совершенство обеспечивается высококачественными, долговечными
-            материалами и технологиями, которые мы используем для производстве
-            наших машин. Но оно также создается и благодаря нашей преданности
-            клиентам и их потребностям.
-          </Text>
-          <Text color="black">
-            Наша опытная команда предлагает комплексное обслуживание, начиная от
-            планирования объекта до технического обслуживания и оснащения ваших
-            залов новейшими технологиями. Являясь вашим надежным партнером, мы
-            делаем все возможное, чтобы ваше предприятие продолжало эффективно
-            работать годы и годы.
-          </Text>
-          <Text color="black">
-            Вы можете рассчитывать на нас в предоставлении одних из лучших услуг
-            в отрасли. Мы ориентированы на оптимизацию срока службы вашего
-            фитнес-оборудования. Мы всегда ищем способы расширить сферу
-            взаимодействия с нашими клиентами, будь то предоставление учебных
-            материалов для ваших сотрудников и инструкторов, или разработка
-            технологических решений, отвечающих потребностям современных
-            пользователей.
-          </Text>
-          <Text>
-            Свяжитесь с нами, чтобы узнать, как партнерство с TRUE может помочь
-            вашей компании добиться успеха.
-          </Text>
+          <Text>{t("brend.about.text1")} </Text>
+          <Text color="black">{t("brend.about.text2")} </Text>
+          <Text color="black">{t("brend.about.text3")}</Text>
+          <Text>{t("brend.about.text4")}</Text>
         </Card>
       </About>
       <AboutContainer>
         <AboutTrue img={about} button={false} />
         <History>
-          <H1>Этапы развития компании True Fitness</H1>
-          <H1>История развития, история внедрения инноваций</H1>
-          <P>
-            С момента своего основания в 1972 году компания TRUE основывалась на
-            двух основных руководящих принципах: создавать продукты высочайшего
-            качества и поддерживать их превосходным обслуживанием. С годами
-            фитнес-индустрия изменилась, появились новые рынки и изменились
-            потребности наших клиентов, но эти принципы остаются неизменными, и
-            мы неустанно продолжаем следить за актуальностью наших технологий.
-          </P>
-          <P>
-            В соответствии с нашими ценностями TRUE всегда стремилась
-            оборудовать наши тренажеры новейшими технологиями и функциями
-            безопасности. Мы с самого начала предоставляли нашим клиентам самые
-            лучшие возможности для тренировок, обеспечивая при этом им
-            уверенность в безопасности. Вот некоторые из революционных
-            достижений, которых мы добились в отрасли за нашу более чем
-            45-летнюю историю.
-          </P>
+          <H1>{t("brend.about_container.title1")}</H1>
+          <H1>{t("brend.about_container.title2")}</H1>
+          <P>{t("brend.about_container.text1")}</P>
+          <P>{t("brend.about_container.text2")}</P>
         </History>
         <Years>
           <b>1973</b>
@@ -110,42 +77,37 @@ function Brand() {
         <ImgDiv>
           <Img src={img} />
           <TrueSports>
-            <H1>TRUE Sports разрабатывает свою первую беговую дорожку</H1>
-            <P>
-              Компания True Sports основанная Frank Trulaske в 1972 году,
-              разрабатывает свою первую беговую дорожку, являясь одним из
-              пионеров в создании беговых дорожек в мире. Примененные технологии
-              повлияли на развитии фитнес индустрии.
-            </P>
+            <H1>{t("brend.about_container.trueSports_title")}</H1>
+            <P>{t("brend.about_container.trueSports_text")}</P>
           </TrueSports>
         </ImgDiv>
       </AboutContainer>
       <Innovations>
-        <InnovationsTitle>Наши инновации</InnovationsTitle>
+        <InnovationsTitle>{t("brend.innovations.title")}</InnovationsTitle>
         <Cards>
           <InnovationsCard>
             <InnovationsImg src={imgCard1} />
-            <CardText>тренажёр лестница Palisade</CardText>
+            <CardText>{t("brend.innovations.img_title1")}</CardText>
           </InnovationsCard>
           <InnovationsCard>
             <InnovationsImg src={imgCard2} />
-            <CardText>тренажёр лестница Palisade</CardText>
+            <CardText>{t("brend.innovations.img_title2")}</CardText>
           </InnovationsCard>
           <InnovationsCard>
             <InnovationsImg src={imgCard3} />
-            <CardText>тренажёр лестница Palisade</CardText>
+            <CardText>{t("brend.innovations.img_title3")}</CardText>
           </InnovationsCard>
           <InnovationsCard>
             <InnovationsImg src={imgCard4} />
-            <CardText>тренажёр лестница Palisade</CardText>
+            <CardText>{t("brend.innovations.img_title4")}</CardText>
           </InnovationsCard>
           <InnovationsCard>
             <InnovationsImg src={imgCard5} />
-            <CardText>тренажёр лестница Palisade</CardText>
+            <CardText>{t("brend.innovations.img_title5")}</CardText>
           </InnovationsCard>
           <InnovationsCard>
             <InnovationsImg src={imgCard6} />
-            <CardText>тренажёр лестница Palisade</CardText>
+            <CardText>{t("brend.innovations.img_title6")}</CardText>
           </InnovationsCard>
         </Cards>
       </Innovations>

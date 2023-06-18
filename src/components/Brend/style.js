@@ -58,7 +58,9 @@ export const H1 = styled.h1`
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
+  text-align: center;
   text-transform: uppercase;
+  max-width: 520px;
   color: ${({ color }) => color || "#01aee7"};
 `;
 export const P = styled.div`
@@ -97,7 +99,7 @@ export const TrueSports = styled.div`
 `;
 export const Innovations = styled.div`
   width: 1440px;
-  height: 1150px;
+  height: 1180px;
   background: #01aee7;
   padding: 65px 100px;
   text-align: center;
@@ -111,12 +113,13 @@ export const InnovationsTitle = styled.div`
   line-height: 48px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  row-gap: 30px;
 `;
 
 export const InnovationsCard = styled.div`
@@ -124,6 +127,7 @@ export const InnovationsCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 34px;
+  border-bottom: 3px solid #FFD233;
 `;
 export const InnovationsImg = styled.img`
   width: 400px;

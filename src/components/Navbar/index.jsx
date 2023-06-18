@@ -28,6 +28,14 @@ const lenguage = [
     flag: "ru",
   },
 ];
+const uzb = [
+  "",
+  "Brend",
+  "MAHSULOTLAR",
+  "Afzalliklari",
+  "Klub ochish",
+  "Kontaktlar",
+];
 const Navbar = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -70,7 +78,7 @@ const Navbar = () => {
                         i18next.changeLanguage(code);
                       }}
                       style={{
-                        opacity: code !== currentLenguageCode ? 0.6 : 1,
+                        opacity: code === currentLenguageCode ? 0.6 : 1,
                       }}
                     >
                       {<span className={`fi fi-${flag}`}></span>} {name}
@@ -81,18 +89,22 @@ const Navbar = () => {
             </div>
             <p>+7(495) 320-5063</p>
           </div>
-          <Button className="navbarText">оставить заявку</Button>
+          <Button className="navbarText">{t("navbar.button")}</Button>
         </Contact>
       </WrapperLogo>
       <Links>
-        {navbar.map(({ name, path, id, hidden }) => {
+        {navbar.map(({ name, path, id, hidden }, index) => {
           return (
             <Link
               className="navbarText"
               onClick={() => navigate(`${path}`)}
               key={id}
             >
-              {!hidden ? name : null}
+              {currentLenguageCode === "uz"
+                ? uzb[index]
+                : !hidden
+                ? name
+                : null}
             </Link>
           );
         })}

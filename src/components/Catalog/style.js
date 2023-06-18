@@ -36,13 +36,15 @@ export const Card = styled.div`
   background-image: url(${({ url }) => url});
 `;
 export const Title = styled.div`
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 72px;
-  text-transform: uppercase;
-  color: #ffffff;
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
 `;
 
 export const Span = styled.div`
